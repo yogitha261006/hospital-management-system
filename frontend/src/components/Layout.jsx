@@ -45,7 +45,7 @@ const Layout = () => {
             <HeartPulse className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h1 className="text-xl font-semibold text-slate-900">Meridian Hospital</h1>
+            <h1 className="text-xl font-semibold text-slate-900">Hospital</h1>
             <p className="text-xs text-slate-500">Admissions Domain Model</p>
           </div>
         </div>

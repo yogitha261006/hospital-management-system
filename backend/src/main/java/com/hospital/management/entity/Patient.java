@@ -68,8 +68,8 @@ public class Patient {
     }
 
     public void assignDoctor(Staff doctor) {
-        if (doctor.getRole() != StaffRole.DOCTOR) {
-            throw new InvalidStateException("Only staff with DOCTOR role can be assigned as a doctor.");
+        if (doctor.getRole() != StaffRole.DOCTOR && doctor.getRole() != StaffRole.NURSE) {
+            throw new InvalidStateException("Only staff with DOCTOR or NURSE role can be assigned.");
         }
         if (!doctor.isAvailable()) {
             throw new StaffUnavailableException("Cannot assign unavailable doctor: " + doctor.getName());
