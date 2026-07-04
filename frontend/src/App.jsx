@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import Layout from './components/Layout';
 import Admissions from './pages/Admissions';
@@ -8,7 +8,7 @@ import AuditLog from './pages/AuditLog';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Toaster position="top-right" />
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -19,7 +19,7 @@ function App() {
           <Route path="audit-log" element={<AuditLog />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
