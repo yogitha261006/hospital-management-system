@@ -6,7 +6,6 @@ A full-stack web application built to demonstrate core Object-Oriented Programmi
 
 ## 📸 Screenshots
 
-*(Replace these placeholders by saving your screenshots into the `docs/images` folder!)*
 
 ### 1. Patient Dashboard
 ![Patient Dashboard](docs/images/dashboard.png)
