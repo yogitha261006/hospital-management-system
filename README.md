@@ -1,4 +1,4 @@
-# Hospital Patient & Staff Domain Model 🏥
+# Hospital Patient & Staff Domain Model 
 
 A full-stack web application built to demonstrate core Object-Oriented Programming (OOP) concepts such as Encapsulation, Access Modifiers, and Controlled State Transitions.
 
