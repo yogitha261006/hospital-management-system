@@ -41,6 +41,10 @@ public class HospitalService {
 
     @Transactional
     public PatientDTO createPatient(CreatePatientRequest request) {
+        // Enforce unique MRN
+        if (patientRepository.existsByMrn(request.getMrn())) {
+            throw new IllegalStateException("A patient with MRN " + request.getMrn() + " already exists.");
+        }
         Patient patient = new Patient(
                 request.getMrn(),
                 request.getName(),

@@ -9,7 +9,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "patients")
+@Table(name = "patients", uniqueConstraints = @UniqueConstraint(columnNames = "mrn"))
 public class Patient {
 
     @Id

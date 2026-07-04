@@ -9,4 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface PatientRepository extends JpaRepository<Patient, Long> {
     long countByCurrentStatus(PatientStatus status);
     int countByAssignedDoctorStaffId(Long staffId);
+    boolean existsByMrn(String mrn);
 }
