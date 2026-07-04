@@ -2,7 +2,8 @@ import axios from 'axios';
 import toast from 'react-hot-toast';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8080',
+    // Use relative URL (empty string) in production if VITE_API_URL is empty
+    baseURL: import.meta.env.VITE_API_URL !== undefined ? import.meta.env.VITE_API_URL : 'http://localhost:8080',
     timeout: 10000,
 });
 
