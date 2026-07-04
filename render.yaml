@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: hospital-management-system
+    runtime: java
+    javaVersion: "17"
+    plan: free
+    buildCommand: "chmod +x build.sh && ./build.sh"
+    startCommand: "java -jar backend/target/management-0.0.1-SNAPSHOT.jar --server.port=$PORT"
+    envVars:
+      - key: PORT
+        value: 10000
